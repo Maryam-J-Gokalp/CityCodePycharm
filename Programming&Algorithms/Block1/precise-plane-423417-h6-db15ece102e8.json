@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "precise-plane-423417-h6",
+  "private_key_id": "db15ece102e85ff6cde7cfabb4ae8006a205e362",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCM7UAhKVztQ817\nsYHx1f7d/SvHwb6/Gq90wEYibyiWGOn0yQg4vFgqGyEjQu4LDHvvVoEKsQB3jpPe\njedNVATbpEZlzMidRYToGTj7bRM4QomAeoG1HT99OArwdhW5PF90y7dugwm+yJ9L\nqLT16bnCygaFTi0RPNduU4/KisVkDqfhOMkMNwA3DcddO38l3OpMhV0T99gTWZhP\n+NCib06pQGcPW7op+cda/VlFJ/s8nOeAixk99nhPT7gItWPFmYlED38i3RzSSZz2\nUnQRe1ss40G5hUCQgQRzX5uClgA398VtXYt1cfDmpue5CyIiY9KZ4DsDLn+NxZc9\nBXFKbltnAgMBAAECggEABEvfXqNyL9GXXCQHQCY0BPSI9ygS9qSLoNWTzczxwdG0\noD/YvlIPpgj5s6eAtlmFFcDfYkIPL5XrMCfHW3YqR7/0XXomy5So/qJ2OEQVB+wP\nYRlbBviDTP/+ZWJUOzd5+YeUagwYqfZX1Oipy616elPKaxn9Cb9/Gd/2TEh6yBgW\ns/aoguu5J7+qVP6EU7eq5lmyjl0IAOQgdh76dgnzPxbVk/r5J8MN6HhY9DVkuBBQ\nn8cS5/IeJZ1Bdr+S5QzcwnSA9iIBO7eAIDUhVtM/jltxIogHD3+C9efpt2jDz34w\nscr1yR4UgFxbZSV5575ZUoSMhj65u/957T7Sl3C6AQKBgQDDwoqblP7u0AVa1mz1\nPW7P8yoEkPpXtud96lSIJgh9TGVQvR8SWsZKJdvjMWfbw0O9WwKRPZkQayf36nbw\nFUe743+CjXAsG5NYfx1jmSVFqA5iKG7UwGTU+IrS6pgJOsEiZyKR4ThfVkT/0hZE\n8nbdEiZ8o+W01xigQj7Cgtdj5wKBgQC4Sxg083kltuE01Z/8rkK3boyv4yOi9zUy\ndBBZRL3Hv4EORd2x9yZ2WXyBiZV3LubJRRdvRSqnu75KfvnSKtdWDJrS/RXk9itl\nj2QEboX0gyqHKWk+hC9YjjHaXLw0+Fgur6j2fnXWcMDAgJk+67qYp4SQqCg//Hp9\n7yYH7FJcgQKBgEoNEk+uOg1uhUgKaucOGRfyvQdDLF/34XPBK77g3D9BoeW71MAl\ntHKiBZ7YtpfsMnizr7HvYjJSxqjCecFx21PYyAhDppYYzFEirKRbbzz9SIubDenO\n6ZWieykz8tUy85Im/229i4yM3scC2se0DICt9/8YJLGW2ErvJDyCMCYrAoGBAIrd\nWsIba3+1i4BqL4EQNYlOLYgi2KllKJp5xg/dsjqe3DnK/z+oAT1QNHbPGuaRWqjx\n/LSFI5z75GjxwIBSc6uNF+Q/e43ox85g+3YzaZBSfWsXEwxeQeayTnJBSjeHobqb\n9e62X0hT8Ymb3N0CdrmsEEGH07xTHGFkH/38XhsBAoGBALzMzf6+NjjJEId6ZhtU\n7S1ZLwaUAI4i6x5f8qCOBKknTR63JEzDauW+SiaCN2XKTCfuK1JkzZrqmOz0BJ3j\nBir+pshTIkBZ++MqJWdlHHeisdTX3tOme9XX9km6p94nraBFUcg3F9ncmP+s49Cr\nTmXsHbYG3w0LLmtlWw6FhFEX\n-----END PRIVATE KEY-----\n",
+  "client_email": "drivecityapi-pycharme@precise-plane-423417-h6.iam.gserviceaccount.com",
+  "client_id": "104858031951768115910",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/drivecityapi-pycharme%40precise-plane-423417-h6.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
