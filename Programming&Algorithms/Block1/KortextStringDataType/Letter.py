@@ -54,3 +54,16 @@ print(number, description,number ** 2)   #output square is 4
 #description = 'squared is:' --->creates a variable description that holds the string 'squared is:'. This string is part of the phrase that will explain what is happening when we display the result.
 #number = 2: ------>This assigns the integer value 2 to the variable number. This variable represents the base number that will be squared (raised to the power of 2).
 #Calculation Inside print():
+
+word = 'good'
+print(word)
+
+word = "good"
+print(word)
+
+word = 'litres'
+number = 5
+print(number, word)
+
+word = 'house number'
+print(word, number)
