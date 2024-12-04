@@ -64,3 +64,7 @@ average = sum(numbers) / len(numbers)
 print("The average of the numbers is:", average)
 
 
+names = ["Allen", "Mary", "Anna", "Adam", "Jonathan", "Ali"]
+
+names[3] = "Jo"
+
