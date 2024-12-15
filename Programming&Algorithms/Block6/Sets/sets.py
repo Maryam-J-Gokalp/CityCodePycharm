@@ -49,3 +49,16 @@ unique_list = list(set(list10))
 # Print the unique list
 print("List without duplicates:", unique_list)
 
+#Try It Yourself
+#Write a program in Python environment that takes 10 inputs, stores them in a list and removes any duplicates.
+#Hint: use the input() function inside a FOR loop, which repeats 10 times
+# Append elements into a list, then
+#convert to a set and convert back
+
+#Use a FOR loop to iterate over a tuple and print each element
+# Define the tuple
+list8 = ("1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+
+# Iterate over the tuple and print each element
+for t in list8:
+    print(t)  # Print each individual element
