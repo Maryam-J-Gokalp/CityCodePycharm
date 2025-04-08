@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    span.error {
+      color: red;
+      font-size: 0.9em;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <form id="member_form">
+    <label>Email:
+      <input type="text" id="email">
+      <span class="error"></span>
+    </label><br><br>
+
+    <label>Password:
+      <input type="password" id="password">
+      <span class="error"></span>
+    </label><br><br>
+
+    <label>Verify Password:
+      <input type="password" id="verify">
+      <span class="error"></span>
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    $("#member_form").submit(event => {
+      event.preventDefault(); // Stop form from submitting
+
+      let isValid = true;
+
+      // Email validation
+      const email = $("#email").val().trim();
+      const emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+      $("#email").val(email);
+
+      if (email === "") {
+        $("#email").next().text("This field is required.");
+        isValid = false;
+      } else if (!emailPattern.test(email)) {
+        $("#email").next().text("Must be a valid email address.");
+        isValid = false;
+      } else {
+        $("#email").next().text("");
+      }
+
+      // Password validation
+      const password = $("#password").val().trim();
+      $("#password").val(password);
+
+      if (password === "") {
+        $("#password").next().text("This field is required.");
+        isValid = false;
+      } else if (password.length < 6) {
+        $("#password").next().text("Must be 6 or more characters.");
+        isValid = false;
+      } else {
+        $("#password").next().text("");
+      }
+
+      // Verify password
+      const verify = $("#verify").val().trim();
+      $("#verify").val(verify);
+
+      if (verify === "") {
+        $("#verify").next().text("This field is required.");
+        isValid = false;
+      } else if (verify !== password) {
+        $("#verify").next().text("Must match first password entry.");
+        isValid = false;
+      } else {
+        $("#verify").next().text("");
+      }
+
+      if (isValid) {
+        alert("Form submitted successfully!");
+        // Optionally, you can submit it via AJAX or allow default submission here
+        // $("#member_form")[0].submit();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Membership Signature </title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+    <form>
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="At least 6 characters">
+
+        <!-- Verify password input -->
+        <label for="verify">Verify Password:</label>
+        <input type="password" id="verify" name="verify">
+
+        <!-- Radio buttons for individual or corporate -->
+        <label for="individual">
+            <input type="radio" name="type" id="individual" value="individual" checked> Individual
+        </label>
+        <label for="corporate">
+            <input type="radio" name="type" id="corporate" value="corporate"> Corporate
+        </label>
+
+        <!-- Company name input (disabled by default) -->
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name" disabled>
+
+        <!-- Add Submit Button (optional) -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="member.js"></script>
+</body>
+</html>
