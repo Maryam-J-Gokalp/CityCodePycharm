@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 7 TIY 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="email_form" name="email_form" action="" method="">
+    <label for="email_address">Email Address:</label>
+    <input type="text" id="email_address" name="email_address"><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="gen" name="gender" value="male"> Male
+    <input type="radio" id="gen" name="gender" value="female" checked> Female
+    <label>&nbsp;</label>
+    <label for="comment">Comment:</label>
+    <textarea name="comment" id="comment" rows="5"cols="40"></textarea><br>
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+      <option value=""></option>
+      <option value="usa">USA</option>
+      <option value="can">Canada</option>
+      <option value="mex">Mexico</option>
+    </select><br>
+    <label>&nbsp;</label>
+    <input type="submit" id="join_list" value="Join our List"><br>
+  </form>
+  <script>
+    const firstInput = document.getElementById('email_address');
+    firstInput.focus();
+
+    const textarea = document.getElementById('comment');
+    textarea.addEventListener('dblclick', function(){
+      alert("Please add a comment here");
+    });
+  </script>
+</body>
+</html>

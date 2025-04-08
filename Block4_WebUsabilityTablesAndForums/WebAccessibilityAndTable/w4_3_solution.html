@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sales table</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			border: 1px solid black;
+			margin: 10px auto;
+		}
+		thead, tfoot {
+			background-color: lightgreen;
+			font-weight: bold;
+			border: 1px solid black;
+		}
+		td, th {
+			padding: .2em .7em;
+			text-align: right;
+			border: 1px solid black;
+		}
+		th.left, td.left {
+			text-align:left;
+		}
+		figcaption {
+			margin: 0;
+			padding: 0;
+			display: block;
+			font-weight: bold;
+			text-align: center;
+			font-size: 120%;
+			padding-bottom: .25em;
+		}
+
+	</style>
+</head>
+
+<body>
+<figcaption>Total Sales by Book</figcaption>	
+<table>
+	<thead>
+		<tr>
+			<th>Book</th>
+			<th>Year Published</th>
+			<th>Sales</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="left">PHP and MySQL</td>
+			<td>2017</td>
+			<td>$372,381</td>
+		</tr>
+		<tr>
+			<td class="left">JavaScript and jQuery</td>
+			<td>2020</td>
+			<td>$305,447</td>
+		</tr>
+		<tr>
+			<td class="left">Python Programming</td>
+			<td>2021</td>
+			<td>$292,444</td>
+		</tr>
+		<tr>
+			<td class="left">Python Data Analysis</td>
+			<td>2021</td>
+			<td>$328,992</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th class="left">Total Sales</th>
+			<td></td>
+			<td>$1,399,264</td>
+		</tr>
+	</tfoot>
+</table>
+
+
+</body>
+
+</html>

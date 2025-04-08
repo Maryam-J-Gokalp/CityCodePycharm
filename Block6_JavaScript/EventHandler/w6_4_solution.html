@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Subscription</title>
+</head>
+<body>
+  <h1>Join Our Email List</h1>
+  
+  <form action="join.html" method="get">
+    <input type="text" id="email_1" name="email_1" placeholder="Enter your email">
+    <input type="submit" id="join_list" value="Join List">
+  </form>
+  
+  <script>
+    const joinList = evt => {
+      if (document.querySelector("#email_1").value == "") { 
+        alert("Email is required.");
+        evt.preventDefault();
+      }
+    };
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector("#join_list").addEventListener("click", joinList);
+    });
+  </script>
+</body>
+</html>

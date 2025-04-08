@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Creating ordered and unordered lists</title>
+<link rel="stylesheet" href="styles/navigation.css"> 
+<style>
+	h2, ul, li {
+		margin: 0;
+		padding: 0:
+	}
+	h2 {
+		padding-bottom: .25em;
+		}
+	ul {
+		padding-left: 1em; /*determines left alignment */
+		list-style-type:circle;
+
+	}
+	li {
+		padding-left: .25; /*space between bullet and text */
+		padding-bottom: .25; /*space after line item */
+	}
+	ul.star {
+		list-style-image:url("images/star.png");
+	}
+	
+</style>
+</head>
+<body>
+	<h2>Vertical Navigation Menu 1</h2>
+	<nav id="nav_menu_1">
+	<ul>
+		<li><a href="01_list.html" class="current" >Page 1</a></li>
+		<li><a href="02_lists.html" >Page 2</a></li> 
+		<li><a href="03_a_attributes.html">Page 3</a></li> 
+		<li><a href="04_new_window.html" >Page 4</a></li>
+		<li><a href="05_placeholders.html">Page 5</a></li>
+		<li><a href="06_navigation.html"> Page 6</a></li>
+	</ul>
+	</nav>
+<h1>Popular web browsers include</h1>
+<ul>
+    <li>Chrome</li>
+    <li>Internet Explorer</li>
+    <li>Firefox</li>
+</ul>
+<h1>Prime skills for web developers are</h1>
+<ul class="star">
+    <li>HTML5 and CSS3</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+</ul>
+</body>
+</html>

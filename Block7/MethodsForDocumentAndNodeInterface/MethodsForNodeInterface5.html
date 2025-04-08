@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Methods for Node Interface 5</title>
+</head>
+<body>
+
+    <!-- Elements in the body -->
+    <div id="mainId">
+        <h2 id="head">Heading to test getRootNode()</h2>
+    </div>
+
+    <button id="addButton">Add Paragraph</button>
+
+    <script>
+        // Create a new <p> element
+        const pElement = document.createElement("p");
+        pElement.id = "myP";
+        pElement.textContent = "Just a text";
+        console.log(pElement.textContent); // Output: Just a text
+
+        // Access elements
+        const addButton = document.getElementById('addButton');
+        const parent = document.getElementById('mainId');
+
+        // Optional: Add paragraph to page when button is clicked
+        addButton.addEventListener("click", function () {
+            parent.appendChild(pElement);
+        });
+
+        // Using getRootNode()
+        const nodChild = document.getElementById("head");
+        const rooNode = nodChild.getRootNode();
+        console.log(rooNode); // Output in Console: #document
+    </script>
+
+</body>
+</html>

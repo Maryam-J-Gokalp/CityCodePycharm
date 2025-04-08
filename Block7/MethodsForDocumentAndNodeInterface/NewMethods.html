@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Try It Yourself - Document and Node Interfaces</title>
+</head>
+<body>
+
+  <!-- Main container for DOM manipulation -->
+  <main id="mainId">
+    <h1>Welcome to the DOM Playground</h1>
+    <h2 id="head">This is the original heading</h2>
+  </main>
+
+  <button onclick="runMethods()">Run DOM Methods</button>
+
+  <script>
+    function runMethods() {
+      // Document Interface 1: createElement
+      const pElement = document.createElement("p");
+      pElement.id = "newText";
+      pElement.textContent = "Just a text";
+      console.log(pElement.textContent); // Output: Just a text
+
+      // Document Interface 2: createTextNode
+      const addText = document.createTextNode("New text added by new method");
+
+      // Node Interface 1: appendChild
+      const appendedParagraph = document.createElement("p");
+      appendedParagraph.appendChild(addText); // Adding the text node to <p>
+
+      // Node Interface 2: insertBefore
+      const parent = document.getElementById("mainId");
+      const insertPara = document.createElement("p");
+      insertPara.textContent = "Inserted before the heading";
+      const existingChild = document.getElementById("head");
+      parent.insertBefore(insertPara, existingChild); // Insert new <p> before <h2>
+
+      // Node Interface 3: replaceChild
+      const newHeading = document.createElement("h2");
+      newHeading.textContent = "This heading replaced the old one";
+      parent.replaceChild(newHeading, existingChild); // Replace <h2 id="head">
+
+      // Node Interface 4: removeChild
+      parent.removeChild(newHeading); // Immediately remove the new heading
+
+      // Node Interface 5: getRootNode
+      const rootExample = document.getElementById("mainId");
+      const rootNode = rootExample.getRootNode();
+      console.log(rootNode); // Output: #document
+
+      // Add created elements to DOM
+      parent.appendChild(pElement); // Add the first paragraph
+      parent.appendChild(appendedParagraph); // Add paragraph with created text node
+    }
+  </script>
+
+</body>
+</html>
+

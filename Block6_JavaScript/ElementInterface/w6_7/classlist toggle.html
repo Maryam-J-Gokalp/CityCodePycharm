@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <style>
+            .colour {background-color:blue;}
+        </style>
+    </head>
+    <body>
+        <p id="changeColour">Hello World!</p>
+        <button onclick = "applyColour()"> Colour </button> 
+        <script>
+            function applyColour(){
+            const chCo = document.getElementById("changeColour");
+            chCo.classList.toggle("colour");}
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <button id="cText"> Click Here to Change</button>
+        <p id="theText"> Here is the text to be changed</p>
+        <script>
+            $(document).ready(function(){
+                $("#cText").click(function(){
+                    $("#theText").text("This is the new text changed by jQuery method");
+                
+            });
+        });
+        </script>
+    </body>
+</html>
+

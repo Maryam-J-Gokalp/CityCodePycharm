@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Methods for Node Interface 2</title>
+</head>
+<body>
+    <!-- Parent container -->
+    <h1 id="mainId">
+        <span id="head">Existing Heading Text</span>
+    </h1>
+
+    <script>
+        // Get the parent element (h1 with id="mainId")
+        const parent = document.getElementById("mainId");
+
+        // Create a new <p> element
+        const pElement = document.createElement("p");
+        pElement.textContent = "This is a new paragraph inserted before the heading.";
+
+        // Get the existing child inside the parent
+        const existingChild = document.getElementById("head");
+
+        // Insert the new <p> before the existing child
+        parent.insertBefore(pElement, existingChild);
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Drop-down Lists and List Boxes</title>
+    <style>
+    	body {
+ 		    margin: 30px;
+		}
+    </style>
+</head>
+
+<body>
+<form id="myform" action="order.php" method="post">
+
+
+
+
+<br><br>
+
+Toppings:<br><br><br>
+
+<select id="list" size="5" multiple>
+    <option>Blue</option>
+    <option selected>Red</option>
+    <option>Yellow</option>
+    <option>Black</option>
+    <option>Brown</option>
+</select>
+
+
+<br><br><br>
+
+Style:<br><br><br>
+
+
+<select>
+    <option></option>
+    <optgroup label="Light Colours">
+        <option >White</option>
+        <option>Yellow</option>
+        <option>Pink</option>
+    </optgroup>
+    <optgroup label="Dark Colours">
+        <option selected>Black</option>
+        <option>Brown</option>
+        <option>Purple</option>
+    </optgroup>
+</select>
+</form>
+</body>
+</html>

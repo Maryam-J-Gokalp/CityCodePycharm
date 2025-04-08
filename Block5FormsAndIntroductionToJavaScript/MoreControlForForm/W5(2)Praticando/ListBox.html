@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Box</title> <!-- Sets the title of the webpage -->
+</head>
+<body>
+
+    <form> <!-- Start of the form -->
+
+        <!-- Added a label for accessibility and better user interaction -->
+        <label for="list">Choose colors:</label>
+
+        <!-- The select dropdown with multiple selection enabled -->
+        <select id="list" name="colors" size="5" multiple>
+
+            <!-- Added value attributes to each option to ensure proper form submission -->
+            <option value="blue">Blue</option>
+            <option value="red" selected>Red</option> <!-- 'selected' makes Red pre-selected -->
+            <option value="yellow">Yellow</option> <!-- Removed extra space before 'Yellow' -->
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+
+        </select>
+
+    </form> <!-- End of form -->
+
+</body>
+</html>

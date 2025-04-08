@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <style>
+            .oldColour {background-color:blue;}
+            .newColour {background-color: pink;}
+        </style>
+    </head>
+    <body>
+        <p id="changeColour" class="oldColour">Hello World!</p>
+        <button onclick = "applyColour()"> Colour </button> 
+        <script>
+            function applyColour(){
+            const chCo = document.getElementById("changeColour");
+            chCo.classList.replace("oldColour", "newColour");}
+        </script>
+    </body>
+</html>
+

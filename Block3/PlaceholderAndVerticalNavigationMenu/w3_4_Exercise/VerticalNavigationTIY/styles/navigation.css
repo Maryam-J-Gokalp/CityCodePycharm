@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+	width: 706px;
+	background-color: white;
+	margin: 15px auto;
+	padding: 20px;
+/*	border: 1px solid black*/
+}
+
+h2 { 
+	font-size: 125%;
+	margin-bottom: .5em;
+	clear: both;
+}
+
+nav {
+	margin-bottom: 2em;
+}
+
+
+/* Put CSS rule sets for the vertical navigation menu 1 after this line */
+
+
+
+
+
+
+
+
+
+
+
+

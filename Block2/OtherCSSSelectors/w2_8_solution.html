@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Psuedo-class and pseudo-element selectors</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+    			font-family: Arial, Helvetica, sans-serif;
+    			font-size: 87.5%;
+    			margin: 2em; }
+			a { font-weight: bold; }
+			a:link { color: green; }
+			a:hover, a:focus { color: fuchsia; }
+			p:first-child { font-weight: bold; }
+			#test {color: red;}
+			p:first-child::first-letter { font-size: 150%; }
+			p{color: orange;}
+		</style>
+	</head>
+	
+	<body>
+		<main>
+			<p id="test">Welcome to San Joaquin Valley Town Hall.</p> 
+			<p>We have some fascinating speakers for you this season!</p>
+			<ul>
+				<li><a href="foldername/filename1.html">David Brancaccio</a></li>
+				<li><a href="foldername/filename2.html">Andrew Ross Sorkin</a></li>
+				<li><a href="foldername/filename3.html">Amy Chua</a></li>
+			</ul>
+		</main>
+	</body>
+</html>

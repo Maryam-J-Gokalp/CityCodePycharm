@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voting Eligibility Check</title>
+</head>
+<body>
+  <h1>Voting Eligibility Check</h1>
+
+  <script>
+    // Prompt the user for their age
+    var age = prompt("Please enter your age:");
+
+    // Convert the user's input to a number
+    age = parseInt(age);
+
+    // Check if the age is a valid number
+    if (!isNaN(age)) {
+      // Check if the user is 18 or older
+      if (age >= 18) {
+        alert("You are eligible to vote!");
+      } else {
+        alert("You are not old enough to vote.");
+      }
+    } else {
+      // Prompt the user to enter a valid age if the input is not a number
+      alert("Please enter a valid number for your age.");
+    }
+  </script>
+</body>
+</html>
+

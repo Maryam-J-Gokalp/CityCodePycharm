@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> parent replace child</title>
+</head>
+<body>
+    <!-- Parent element -->
+    <h1 id="mainId">
+        <span id="head">This will be replaced</span>
+    </h1>
+
+    <script>
+        // Get the parent element
+        const parent = document.getElementById("mainId");
+
+        // Create a new <p> element
+        const pElement = document.createElement("p");
+        pElement.textContent = "parent replace child.";
+
+        // Get the child to be replaced
+        const existingChild = document.getElementById("head");
+
+        // Replace the child with the new paragraph
+        parent.replaceChild(pElement, existingChild);
+    </script>
+</body>
+</html>

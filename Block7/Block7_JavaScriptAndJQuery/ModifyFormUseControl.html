@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Inquiry Form</title>
+</head>
+<body>
+    <h2>Get in Touch With Us</h2>
+    <form id="contactForm">
+        <!-- Radio Button Section -->
+        <fieldset>
+            <legend>Preferred Way to Reach You</legend>
+            <label>
+                <input type="radio" name="preferredContact" value="email"> Email
+            </label>
+            <label>
+                <input type="radio" name="preferredContact" value="phone"> Phone
+            </label>
+        </fieldset><br>
+
+        <!-- Terms Agreement Checkbox -->
+        <label>
+            <input type="checkbox" id="termsBox" value="agreed"> I agree to the terms of use
+        </label><br><br>
+
+        <!-- Message Area -->
+        <label for="userMessage">Your Message:</label><br>
+        <textarea id="userMessage" rows="5" cols="35" placeholder="Type your message here..."></textarea><br><br>
+
+        <!-- Dropdown Menu -->
+        <label for="category">Choose a Category:</label><br>
+        <select id="category">
+            <option value="support">Customer Support</option>
+            <option value="feedback">Feedback</option>
+            <option value="general">General Inquiry</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <button type="button" onclick="submitForm()">Send</button>
+    </form>
+
+    <script>
+        // Trigger an alert when dropdown selection changes
+        document.getElementById("category").addEventListener("change", function () {
+            alert("Category chosen: " + this.value);
+        });
+
+        // Function that runs when form is submitted
+        function submitForm() {
+            // Determine selected contact method
+            const options = document.getElementsByName("preferredContact");
+            let chosenContact = "";
+            for (let option of options) {
+                if (option.checked) {
+                    chosenContact = option.value;
+                    break;
+                }
+            }
+
+            // Check if terms are accepted
+            const isAgreed = document.getElementById("termsBox").checked;
+
+            // Grab message input
+            const messageContent = document.getElementById("userMessage").value;
+
+            // Get selected category
+            const selectedCategory = document.getElementById("category").value;
+
+            // Log all responses to the console (or later display on the page)
+            console.log("Chosen Contact Method:", chosenContact);
+            console.log("Terms Accepted:", isAgreed ? "Yes" : "No");
+            console.log("Message Submitted:", messageContent);
+            console.log("Inquiry Category:", selectedCategory);
+        }
+    </script>
+</body>
+</html>

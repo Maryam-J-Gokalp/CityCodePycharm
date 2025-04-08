@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio and Checkbox Objects</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="email">
+            <input type="radio" name="contact" id="email" value="email"> Email
+        </label><br>
+
+        <label for="accept">
+            <input type="checkbox" name="accept" id="accept" value="accept"> I accept the terms
+        </label><br>
+
+        <button type="button" onclick="handleForm()">Submit</button>
+    </form>
+
+    <script>
+        // JavaScript property
+        function handleForm() {
+            let contact = "";
+
+            const emailRadio = document.getElementById("email");
+            const acceptCheckbox = document.getElementById("accept");
+
+            if (emailRadio.checked) {
+                contact = emailRadio.value;
+            } else if (contact === "email") {
+                // email processing
+                console.log("Processing email contact method...");
+            }
+
+            if (acceptCheckbox.checked) {
+                // accept processing
+                console.log("User accepted the terms.");
+            } else {
+                console.log("User did not accept the terms.");
+            }
+
+            console.log("Contact method:", contact);
+        }
+    </script>
+</body>
+</html>

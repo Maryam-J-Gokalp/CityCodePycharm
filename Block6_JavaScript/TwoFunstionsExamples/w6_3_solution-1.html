@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <label>Enter marks (comma-separated):</label>
+    <input type="text" id="marks" placeholder="e.g., 75, 80, 90">
+    <button onclick="calculateAverage()">Calculate</button>
+    <p>Average: <span id="average"></span></p>
+
+    <script>
+        function calculateAverage() {
+            let marks = document.getElementById("marks").value.split(",").map(Number);
+            let avg = marks.reduce((sum, num) => sum + num, 0) / marks.length || 0;
+            document.getElementById("average").textContent = avg.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+
+

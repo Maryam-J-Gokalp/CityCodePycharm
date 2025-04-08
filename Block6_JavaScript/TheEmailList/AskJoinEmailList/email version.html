@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Newsletter Registration</title>
+    <script>
+        function validateSignupForm() {
+            var userEmail = document.getElementById("user_email").value;
+            var confirmEmail = document.getElementById("confirm_email").value;
+            var userFirstName = document.getElementById("user_first_name").value;
+
+            // Check if all fields are filled
+            if (!userEmail || !confirmEmail || !userFirstName) {
+                alert("Please fill in all required fields.");
+                return false; // Stop form submission
+            }
+
+            // Check if emails match
+            if (userEmail !== confirmEmail) {
+                alert("The email addresses do not match. Please try again.");
+                return false; // Stop form submission
+            }
+
+            return true; // Allow form submission if validation is successful
+        }
+    </script>
+</head>
+<body>
+    <h1>Join Our Email List</h1>
+
+    <!-- Flash messages section -->
+    {% with flash_messages = get_flashed_messages() %}
+        {% if flash_messages %}
+            <ul>
+                {% for message in flash_messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Signup Form -->
+    <form method="POST" action="/" onsubmit="return validateSignupForm()">
+        <label for="user_first_name">First Name:</label>
+        <input type="text" id="user_first_name" name="first_name"><br><br>
+
+        <label for="user_email">Email Address:</label>
+        <input type="email" id="user_email" name="email1"><br><br>
+
+        <label for="confirm_email">Confirm Email:</label>
+        <input type="email" id="confirm_email" name="email2"><br><br>
+
+        <button type="submit">Subscribe</button>
+    </form>
+</body>
+</html>

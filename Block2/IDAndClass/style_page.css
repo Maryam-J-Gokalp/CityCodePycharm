@@ -1,0 +1,30 @@
+* {
+  text-align: center;
+}
+
+body {
+  background-color: orange;
+}
+h1 {
+  color: blue;
+}
+#initial {
+  font-style: normal;
+}
+p {
+  color:green;
+  font-style: italic;
+  }
+
+h2 {
+    font-style: italic;
+}
+.group_colour {
+  color:brown;
+}
+#random {
+  font-size: xx-large;
+}
+.focus {
+  text-align:left;
+}

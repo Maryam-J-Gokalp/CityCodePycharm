@@ -1,0 +1,37 @@
+<html>
+    <main id="mainId">
+        <h1 id="fhead">This is the first heading 1</h1>
+        <h1 id="head">
+            This is the second heading 1
+        </h1>
+        <button id="addButton">Add Text</button>
+    </main>
+    <script>
+        const pElement = document.createElement ("p");
+        pElement.id = "myP";
+        pElement.textContent = "Just a text";
+        console.log(pElement.textContent);
+
+        const addButton = document.getElementById('addButton');
+        const parent = document.getElementById('mainId');
+
+        addButton.addEventListener('click', function(){
+            //creat a new text node
+            const addText = document.createTextNode ("New text added by new method");
+            const addText2 = document.createTextNode ("The text added before the second heading 1");
+
+            //appending to an element
+            const pElement1 = document.createElement("p");
+            pElement1.appendChild(addText);
+            parent.appendChild(pElement1); 
+
+            //replacing the second heading 1
+            const existingChild = document.getElementById("head");
+            parent.replaceChild(pElement1, existingChild);
+
+            //removing the first heading 1
+            const existingChild2 = document.getElementById("fhead");
+            parent.removeChild(existingChild2);
+        });
+    </script>
+</html>

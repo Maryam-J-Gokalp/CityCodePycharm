@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script Forms and Controls</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea name="comment" id="comment">textarea</textarea><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="c">Canada</option>
+        </select><br><br>
+
+        <button type="button" onclick="handleForm()">Submit</button>
+    </form>
+
+    <script>
+        // JavaScript property to retrieve input values
+        const handleForm = () => {
+            const name = document.getElementById("name").value;
+            const comment = document.getElementById("comment").value;
+            const country = document.getElementById("country").value;
+
+            // To add: set name field to "Peter Smith"
+            const addname = document.getElementById("name");
+            addname.value = "Peter Smith";
+
+            console.log("Name:", name);
+            console.log("Comment:", comment);
+            console.log("Country:", country);
+        };
+    </script>
+</body>
+</html>
