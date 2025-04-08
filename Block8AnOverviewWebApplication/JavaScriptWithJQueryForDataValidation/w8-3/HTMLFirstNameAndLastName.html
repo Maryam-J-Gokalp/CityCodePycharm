@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Form</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <form id="testForm">
+    <label>First Name:</label>
+    <input type="text" id="first_name"><span></span><br><br>
+
+    <label>Last Name:</label>
+    <input type="text" id="last_name"><span></span><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    $(document).ready(() => {
+      $("#testForm").submit((e) => {
+        let isValid = true;
+
+        const firstName = $("#first_name").val().trim();
+        if (firstName === "") {
+          $("#first_name").next("span").text("First name required");
+          isValid = false;
+        } else {
+          $("#first_name").next("span").text("");
+        }
+
+        const lastName = $("#last_name").val().trim();
+        if (lastName === "") {
+          $("#last_name").next("span").text("Last name required");
+          isValid = false;
+        } else {
+          $("#last_name").next("span").text("");
+        }
+
+        if (!isValid) e.preventDefault();
+      });
+    });
+  </script>
+</body>
+</html>
